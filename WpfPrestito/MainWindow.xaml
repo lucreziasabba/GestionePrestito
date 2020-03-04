@@ -15,11 +15,36 @@
         <RadioButton Content="RadioButton" HorizontalAlignment="Left" Height="0" Margin="-105,25,0,0" VerticalAlignment="Top" Width="0"/>
         <TextBox Name="txtCognome" HorizontalAlignment="Left" Margin="168,78,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="txtNome" HorizontalAlignment="Left" Margin="168,132,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <RadioButton Content="F" HorizontalAlignment="Left" Margin="168,199,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="M" HorizontalAlignment="Left" Margin="228,199,0,0" VerticalAlignment="Top"/>
-        <DatePicker/>
-        <DatePicker HorizontalAlignment="Left" Margin="156,246,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="156,305,0,0" VerticalAlignment="Top" Width="120"/>
-
+        <RadioButton  Name="Femmina" Content="F" HorizontalAlignment="Left" Margin="168,199,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="Maschio" Content="M" HorizontalAlignment="Left" Margin="228,199,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="dataPicker" HorizontalAlignment="Left" Margin="156,246,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="156,305,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>
+               Perugia
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Foligno
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Castiglione del Lago
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Assisi
+            </ComboBoxItem>
+        </ComboBox>
+            <Label Content="Importo richiesto" HorizontalAlignment="Left" Margin="344,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="N. Rate" HorizontalAlignment="Left" Margin="344,124,0,0" VerticalAlignment="Top"/>
+        <Label Content="Percentuale" HorizontalAlignment="Left" Margin="344,191,0,0" VerticalAlignment="Top"/>
+        <Label Content="Importo da restituire" HorizontalAlignment="Left" Margin="344,245,0,0" VerticalAlignment="Top"/>
+        <Label Content="Importo per rata" HorizontalAlignment="Left" Margin="344,305,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtImportoRichiesto" HorizontalAlignment="Left" Margin="500,78,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtNRate" HorizontalAlignment="Left" Margin="500,132,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtPercentuale" HorizontalAlignment="Left" Margin="500,199,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtImportoDaRestituire" HorizontalAlignment="Left" Margin="500,252,0,0" Text="" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtImportoPerRata" HorizontalAlignment="Left" Margin="500,313,0,0" Text="" TextWrapping="Wrap" IsReadOnly="True" VerticalAlignment="Top" Width="120"/>
+        <Button Content="CALCOLA" HorizontalAlignment="Left" Margin="701,107,0,0" VerticalAlignment="Top" Height="40" Width="65" Click="Calcola_Click"/>
+        <Button Content="NUOVO" HorizontalAlignment="Left" Margin="701,192,0,0" VerticalAlignment="Top" Height="40" Width="65"/>
+        <Button Content="STAMPA" HorizontalAlignment="Left" Margin="701,290,0,0" VerticalAlignment="Top" Height="40" Width="65" Click="Stampa_Click"/>
+        <Label Name="lblStampato" Content="" HorizontalAlignment="Left" Margin="41,347,0,0" VerticalAlignment="Top" Height="77" Width="708"/>
     </Grid>
 </Window>
